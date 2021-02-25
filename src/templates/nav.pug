@@ -12,13 +12,3 @@ header.nav
         a(href=navContent.nav_path2).burger-menu__link= navContent.nav_link2
         a(href=navContent.nav_path3).burger-menu__link= navContent.nav_link3
         a(href=navContent.nav_path4).burger-menu__link= navContent.nav_link4
-        div
-            .burger-menu__lang
-                if LANG.locale === "en"
-                    a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).burger-menu__lang-link.active-lang= navContent.lang1
-                else
-                    a(rel="alternate" hreflang=navContent.lang1_pathlang href=navContent.lang1_path).burger-menu__lang-link= navContent.lang1
-                if LANG.locale === "ru"
-                    a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).burger-menu__lang-link.active-lang= navContent.lang2
-                else
-                    a(rel="alternate" hreflang=navContent.lang2_pathlang href=navContent.lang2_path).burger-menu__lang-link= navContent.lang2
