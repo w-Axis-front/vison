@@ -1,0 +1,27 @@
+{
+  "locale": "ru",
+  "nav": {
+    "nav_logo": {
+      "src": "img/svg/nav_logo.svg",
+      "alt": "Vison logo"
+    },
+    "nav_logo_path": "/",
+    "nav_link1": "",
+    "nav_path1": "#id",
+    "nav_link2": "",
+    "nav_path2": "#id",
+    "nav_link3": "",
+    "nav_path3": "#id",
+    "nav_link4": "",
+    "nav_path4": "#id",
+    "lang2": "Ru",
+    "lang2_path": "/ru/",
+    "lang2_pathlang": "ru",
+    "lang1": "En",
+    "lang1_path": "/",
+    "lang1_pathlang": "en"
+  },
+  "main": "",
+  "contacts": "",
+  "footer": ""
+}
