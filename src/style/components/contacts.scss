@@ -1,3 +1,37 @@
 /*********** CONTACTS *************/
-.contacts {}
+.contacts {
+  &__form {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  &__input-name {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__input-phone {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 19px;
+    width: 100%;
+  }
+
+  &__input-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    width: 13px;
+    height: auto;
+  }
+
+  &__form-btn {
+    max-width: 279px;
+    margin-bottom: 26px;
+  }
+}
+
 /*********** CONTACTS END *************/

@@ -1,7 +1,7 @@
 # Vison
 
-Макет:
-Копирайт:
+Макет: https://www.figma.com/file/2veh2mOaGUbmW79ieR2H1x/Vison_mobile?node-id=0%3A1
+Копирайт: https://docs.google.com/document/d/1vbMhECyMNX5U4quqZ0RtzvFTn9A_NGuhhMcbMxnVBcY/edit
 
 ## Структура проекта
 

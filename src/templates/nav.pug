@@ -2,9 +2,8 @@
 
 header.nav
     div.nav__wrap
-        .nav__logo-wrap
-            a(href=navContent.nav_logo_path).nav__logo
-                img&attributes(navContent.nav_logo).nav__logo-img
+        a(href=navContent.nav_logo_path).nav__logo
+            img&attributes(navContent.nav_logo).nav__logo-img
         div.nav__burger
             span.nav__burger-line
     .burger-menu
@@ -12,3 +11,7 @@ header.nav
         a(href=navContent.nav_path2).burger-menu__link= navContent.nav_link2
         a(href=navContent.nav_path3).burger-menu__link= navContent.nav_link3
         a(href=navContent.nav_path4).burger-menu__link= navContent.nav_link4
+        a(href=navContent.nav_path5).burger-menu__link= navContent.nav_link5
+        a(href=navContent.nav_path6).burger-menu__link= navContent.nav_link6
+        a(href=navContent.nav_path7).burger-menu__link= navContent.nav_link7
+        a(href=navContent.nav_button_path).burger-menu__button.button= navContent.nav_button

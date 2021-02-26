@@ -1,7 +1,20 @@
 - const main = LANG.main;
 
 main
-    section.container
-        .main
+    section.main
+        .main__images-block
+            img&attributes(main.img_V).main__image-V
+            img&attributes(main.img_I).main__image-I
+            img&attributes(main.img_S).main__image-S
+            img&attributes(main.img_O).main__image-O
+            img&attributes(main.img_N).main__image-N
+            img&attributes(main.img).main__image
+        .main__content-block
+            h1.main__title= main.title
+            p.main__text= main.text
+            a(href=main.button_path).main__button.button= main.button
+            .main__line
+                .main__line-wrapper
+                    span.main__line-text= main.line
     block contacts
         include contacts.pug

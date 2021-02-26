@@ -6,16 +6,63 @@
       "alt": "Vison logo"
     },
     "nav_logo_path": "/",
-    "nav_link1": "",
-    "nav_path1": "#id",
-    "nav_link2": "",
-    "nav_path2": "#id",
-    "nav_link3": "",
-    "nav_path3": "#id",
-    "nav_link4": "",
-    "nav_path4": "#id"
+    "nav_link1": "Vison",
+    "nav_path1": "#vison",
+    "nav_link2": "Проблема",
+    "nav_path2": "#issue",
+    "nav_link3": "Мнение эксперта",
+    "nav_path3": "#expertEvidence",
+    "nav_link4": "Сравнение",
+    "nav_path4": "#comparing",
+    "nav_link5": "Отзывы",
+    "nav_path5": "#testimonials",
+    "nav_link6": "Применение",
+    "nav_path6": "#usage",
+    "nav_link7": "Доставка и оплата",
+    "nav_path7": "#shipment",
+    "nav_button": "Заказать",
+    "nav_button_path": "#contacts"
   },
-  "main": "",
-  "contacts": "",
+  "main": {
+    "img_V": {
+      "src": "img/svg/V.svg",
+      "alt": "V"
+    },
+    "img_I": {
+      "src": "img/svg/I.svg",
+      "alt": "I"
+    },
+    "img_S": {
+      "src": "img/svg/S.svg",
+      "alt": "S"
+    },
+    "img_O": {
+      "src": "img/svg/O.svg",
+      "alt": "O"
+    },
+    "img_N": {
+      "src": "img/svg/N.svg",
+      "alt": "N"
+    },
+    "img": {
+      "src": "img/main/vison.png",
+      "alt": "Vison",
+      "srcset": "img/main/vison@2x.png 2x"
+    },
+    "title": "Vison",
+    "text": "100% надежное средстводля восстановления зрения",
+    "button": "Заказать звонок",
+    "button_path": "#contacts",
+    "line": "1 400 529 положительных отзывов"
+  },
+  "contacts": {
+    "name_placeholder": "Имя",
+    "phone_placeholder": "Телефон",
+    "button": "Заказать Vison",
+    "input_img": {
+      "src": "img/svg/lock.svg",
+      "alt": "Safe and secure sending"
+    }
+  },
   "footer": ""
 }

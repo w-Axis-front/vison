@@ -1,7 +1,8 @@
 body
 	font-family: $main-font-family
+	position: relative
 
-// Font icons
+// Font icons:
 .fico
 	display: inline-block
 	font-size: 3rem
@@ -15,60 +16,50 @@ body
 	margin: 0 auto
 
 .button
-	//background-color: $mainColor
-	//color: $lightColor
-	//font-family: $font-family
-	//font-weight: 500
-	//font-size: 16px
-	//line-height: 16px
+	background-color: $btnColor
+	color: $darkColor
+	font-weight: bold
+	font-size: 22px
+	line-height: 22px
 	text-align: center
-	//padding: 18px 57px 19px 57px
-	//border-radius: 50px
+	padding-top: 17px
+	padding-bottom: 17px
+	width: 100%
+	border-radius: 30px
 	transition: .3s
+	border: 2px solid rgba(255, 255, 255, 0.25)
+	box-shadow: 0 4px 10px rgba(27, 66, 141, 0.25)
+	display: block
+	margin: 0 auto
+	letter-spacing: 0.02em
+	text-shadow: 0 1px 1px rgba(152, 153, 98, 0.2)
 
-	&:hover, &:focus
-		//background-color: $bg-hover
+	&:hover, &:focus, &:active, &:focus-visible
+		background-color: $bg-hover
+		color: $lightColor
 
-	&:active, &:focus-visible
-		//background-color: $bg-active
-
-.input-block
-	position: relative
-
-.label
-	//color: $textColorTransparent
-	//opacity: 0
-	//position: absolute
-	//left: 27px
-	//top: -8px
-	//font-family: $font-family
-	//font-size: 12px
-	//line-height: 16px
-	//background-color: $lightColor
-	//padding: 0 7px
-	//border-radius: 3px
-
-	&:active
-		display: inline-block
+.button-darken
+	background-color: $btnColorDarken
+	color: $lightColor
+	&:hover, &:focus, &:active, &:focus-visible
+		background-color: $bg-hover-darken
 
 .input
-	//border: 2px solid $mainColor
+	border: 1px solid rgba(27, 66, 141, 0.25)
 	vertical-align: middle
-	//padding: 12px 27px 12px 27px
-	//font-family: $font-family
-	//font-size: 16px
-	//line-height: 25px
-	//border-radius: 32px
-	//width: 100%
+	padding: 10px 41px 10px 16px
+	font-size: 18px
+	line-height: 30px
+	border-radius: 4px
+	width: 100%
+	background-color: $lightColor
+	color: $inputColor
 
 	&::placeholder
-		//color: $textColorTransparent
+		color: $textColorTransparent
 
-	&:not(:placeholder-shown), &:focus
-		//border: 2px solid $textColorTransparent
-
-		& ~ .label
-			//opacity: 1
+	//&:not(:placeholder-shown), &:focus
+		//border: 1px solid $textColorTransparent
 
 	&:invalid
 		box-shadow: none
@@ -80,8 +71,5 @@ body
 		box-shadow: none
 
 	&:invalid:focus:placeholder-shown, &:invalid:focus:not(:placeholder-shown), &:invalid:not(:focus):not(:placeholder-shown)
-		//border: 2px solid $errorColor
-
-		& ~ .label
-			//color: $errorColor
-			//opacity: 1
+		border: 1px solid $errorColor
+		color: $errorColor
