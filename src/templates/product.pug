@@ -1,0 +1,13 @@
+- const productContent = LANG.product;
+
+section.product
+    .container
+        h2.product__title= productContent.title
+        p.product__text= productContent.text1
+        p.product__text= productContent.text2
+    #js_productSlider
+        each val in productContent.productSlider
+            div(class="product__slide-" + val.additional_class + " " + "product__slide")
+                img&attributes(val.img).product__slide-img
+                p.product__slide-text= val.text
+                .product__slider-dots

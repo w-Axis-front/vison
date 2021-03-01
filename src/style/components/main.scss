@@ -13,7 +13,7 @@
    top: calc(50vh - 288px);
     transform: translateX(-50%);
     position: relative;
-    min-height: 357px;
+    min-height: 277px;
     width: 100%;
     max-width: 307px;
   }
@@ -117,7 +117,7 @@
     line-height: 14px;
     text-transform: uppercase;
     display: inline-block;
-    animation: scroll-anim 100s linear 1s infinite;
+    animation: scroll-anim 30s linear 0s infinite;
   }
 
   &__line-text {
@@ -192,6 +192,12 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (orientation: landscape) {
+  .main__images-block {
+    top: 0;
   }
 }
 

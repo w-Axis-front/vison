@@ -2,6 +2,7 @@ export default function nav() {
     const burger_button = document.querySelector('.nav__burger');
     const burgerNav = $('.burger-menu');
     const burgerNavItems = document.querySelectorAll(".burger-menu__link");
+    const burgerNavButton = document.querySelector(".burger-menu__button");
 
     function closeNav() {
         burgerNav.hide();
@@ -24,6 +25,7 @@ export default function nav() {
         for (let i = 0; i < burgerNavItems.length; i++) {
             burgerNavItems[i].addEventListener('click', closeNav);
         }
+        burgerNavButton.addEventListener('click', closeNav);
     }
     navHandler();
 }

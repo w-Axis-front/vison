@@ -11,9 +11,9 @@ body
 
 .container
 	//max-width: $container-xl
-	width: 100%
-	//padding: 0 15px
-	margin: 0 auto
+	// width: 100%
+	padding: 0 20px
+	// margin: 0 auto
 
 .button
 	background-color: $btnColor
@@ -37,12 +37,16 @@ body
 	&:hover, &:focus, &:active, &:focus-visible
 		background-color: $bg-hover
 		color: $lightColor
-
+	&:visited
+		background-color: $btnColor
+		color: $darkColor
 .button-darken
 	background-color: $btnColorDarken
 	color: $lightColor
 	&:hover, &:focus, &:active, &:focus-visible
 		background-color: $bg-hover-darken
+	&:visited
+		background-color: $btnColorDarken
 
 .input
 	border: 1px solid rgba(27, 66, 141, 0.25)

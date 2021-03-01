@@ -1,11 +1,50 @@
-- const contacts = LANG.contacts;
-
-section.contacts#contacts
-    form(class="contacts__form" action="/#" method="POST")
-        .contacts__input-name
-            input(class="input" placeholder=contacts.name_placeholder type="text" tabindex="1" minlength=3 required name="name")
-            img&attributes(contacts.input_img).contacts__input-img
-        .contacts__input-phone
-            input(class="input" placeholder=contacts.phone_placeholder type="tel" tabindex="2" minlength=3 required name="phone")
-            img&attributes(contacts.input_img).contacts__input-img
-        button(class="button button-darken contacts__form-btn" type="submit")= contacts.button
+if isId === true
+    section.contacts#contact
+        .container
+            h2.contacts__title= contactsContent.title
+            p.contacts__text
+                span.contacts__text1= contactsContent.text1
+                span.contacts__text2= contactsContent.text2
+            p.contacts__text.contacts__text3= contactsContent.text3
+        .contacts__img-block
+           img&attributes(contactsContent.img).contacts__img
+        .container
+            form(class="contacts__form" action="/#" method="POST")
+                .contacts__input-name
+                    input(class="input" placeholder=contactsContent.name_placeholder type="text" tabindex="1" minlength=3 required name="name")
+                    img&attributes(contactsContent.input_img).contacts__input-img
+                .contacts__input-phone
+                    input(class="input" placeholder=contactsContent.phone_placeholder type="tel" tabindex="2" minlength=3 required name="phone")
+                    img&attributes(contactsContent.input_img).contacts__input-img
+                button(class="button button-darken contacts__form-btn" type="submit")= contactsContent.button
+        .contacts__already
+            .container
+                p.contacts__already-title= contactsContent.already_title
+                p.contacts__already-text
+                    span.contacts__already-text1= contactsContent.already_text1
+                    span.contacts__already-text2= contactsContent.already_text2
+else
+    section.contacts
+        .container
+            h2.contacts__title= contactsContent.title
+            p.contacts__text
+                span.contacts__text1= contactsContent.text1
+                span.contacts__text2= contactsContent.text2
+            p.contacts__text.contacts__text3= contactsContent.text3
+        .contacts__img-block
+            img&attributes(contactsContent.img).contacts__img
+        .container
+            form(class="contacts__form" action="/#" method="POST")
+                .contacts__input-name
+                    input(class="input" placeholder=contactsContent.name_placeholder type="text" tabindex="1" minlength=3 required name="name")
+                    img&attributes(contactsContent.input_img).contacts__input-img
+                .contacts__input-phone
+                    input(class="input" placeholder=contactsContent.phone_placeholder type="tel" tabindex="2" minlength=3 required name="phone")
+                    img&attributes(contactsContent.input_img).contacts__input-img
+                button(class="button button-darken contacts__form-btn" type="submit")= contactsContent.button
+        .contacts__already
+            .container
+                p.contacts__already-title= contactsContent.already_title
+                p.contacts__already-text
+                    span.contacts__already-text1= contactsContent.already_text1
+                    span.contacts__already-text2= contactsContent.already_text2

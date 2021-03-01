@@ -1,4 +1,5 @@
 - const main = LANG.main;
+- const contactsContent = LANG.contacts;
 
 main
     section.main
@@ -16,5 +17,26 @@ main
             .main__line
                 .main__line-wrapper
                     span.main__line-text= main.line
+                    span.main__line-text= main.line
+    block product
+        include product.pug
+    - let isId = false;
+    block contacts
+        include contacts.pug
+    block issue
+        include issue.pug
+    block expert
+        include expert.pug
+    block contacts
+        include contacts.pug
+    block comparing
+        include comparing.pug
+    block testimonials
+        include testimonials.pug
+    block shipment
+        include shipment.pug
+    block usage
+        include usage.pug
+    - isId = true;
     block contacts
         include contacts.pug

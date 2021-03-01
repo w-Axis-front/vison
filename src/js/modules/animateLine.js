@@ -8,7 +8,7 @@ export default function animateLine() {
             for (let i = 0; i < nElem; i++) {
                 oQuotes.appendChild(oQuotes.children[i].cloneNode(true));
             }
-            oQuotes.style.animationDuration = '3s,' + (nElem * 2) + 's';
+            oQuotes.style.animationDuration = '4s,' + (nElem * 2) + 's';
         }
 
         fDoublingQuotes();

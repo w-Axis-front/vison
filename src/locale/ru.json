@@ -21,7 +21,7 @@
     "nav_link7": "Доставка и оплата",
     "nav_path7": "#shipment",
     "nav_button": "Заказать",
-    "nav_button_path": "#contacts"
+    "nav_button_path": "#contact"
   },
   "main": {
     "img_V": {
@@ -52,17 +52,113 @@
     "title": "Vison",
     "text": "100% надежное средстводля восстановления зрения",
     "button": "Заказать звонок",
-    "button_path": "#contacts",
+    "button_path": "#contact",
     "line": "1 400 529 положительных отзывов"
   },
   "contacts": {
-    "name_placeholder": "Имя",
-    "phone_placeholder": "Телефон",
+    "title": "Успейте оформить заказ по выгодной промо-цене",
+    "text1": "при заказе ",
+    "text2": "08.02.2021",
+    "text3": "одна упаковка за €49*",
+    "img": {
+      "scr": "img/contacts/vison.png",
+      "alt": "Vison packaging",
+      "srcset": "img/contacts/vison@2x.png 2x"
+    },
+    "name_placeholder": "Введите Ваше имя",
+    "phone_placeholder": "Введите Ваш телефон",
     "button": "Заказать Vison",
     "input_img": {
       "src": "img/svg/lock.svg",
       "alt": "Safe and secure sending"
-    }
+    },
+    "already_title": "Уже купили сегодня:",
+    "already_text1": "295 ",
+    "already_text2": "человек"
   },
-  "footer": ""
+  "product": {
+    "title": "Vison",
+    "text1": "Восстановление зрения до «единицы» без операции",
+    "text2": "Средство Vison устраняет нарушения зрения, восстанавливая сосуды и ткани глаза",
+    "productSlider": [
+      {
+        "img": {
+          "scr": "img/productSlider/slide1.jpg",
+          "alt": "Customer 1",
+          "srcset": "img/productSlider/slide1@2x.jpg 2x"
+        },
+        "additional_class": "customer1",
+        "text": "Повышает остроту зрения"
+      },
+      {
+        "img": {
+          "scr": "img/productSlider/slide2.jpg",
+          "alt": "Customer 2",
+          "srcset": "img/productSlider/slide2@2x.jpg 2x"
+        },
+        "additional_class": "customer2",
+        "text": "Улучшает кровообращение в сосудах глаза"
+      },
+      {
+        "img": {
+          "scr": "img/productSlider/slide3.jpg",
+          "alt": "Customer 3",
+          "srcset": "img/productSlider/slide3@2x.jpg 2x"
+        },
+        "additional_class": "customer3",
+        "text": "Препятствует развитию катаракты"
+      },
+      {
+        "img": {
+          "scr": "img/productSlider/slide4.jpg",
+          "alt": "Customer 4",
+          "srcset": "img/productSlider/slide4@2x.jpg 2x"
+        },
+        "additional_class": "customer4",
+        "text": "Защищает сетчатку глаза от внешних воздействий"
+      }
+    ]
+  },
+  "issue": {
+    "titlePart1": "Почему",
+    "titlePart2": "99% способов",
+    "titlePart3": "вернуть зрение",
+    "titlePart4": "неэффективны?"
+  },
+  "expert": {
+    "title": "Мнение эксперта:"
+  },
+  "comparing": {
+    "titlePart1": "Клинические",
+    "titlePart2": "испытания",
+    "titlePart3": "доказали",
+    "titlePart4": "эффективность",
+    "titlePart5": "и",
+    "titlePart6": "безопасность",
+    "titlePart7": "средства",
+    "titlePart8": "Vison"
+  },
+  "testimonials": [
+    {
+      "slide_title": "Мария, 35 лет"
+    }
+  ],
+  "usage": {
+    "titlePart1": "Как правильно принимать",
+    "titlePart2": "Vison?"
+  },
+  "shipment": {
+    "titlePart1": "Как",
+    "titlePart2": "оформить",
+    "titlePart3": "и",
+    "titlePart4": "получить заказ:"
+  },
+  "footer": {
+    "text": "Vison © 2021. Все права защищены.",
+    "img_up": {
+      "src": "img/svg/arrow-up.svg",
+      "alt": "Up"
+    },
+    "up_path": "#pageTop"
+  }
 }

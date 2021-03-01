@@ -1,4 +1,5 @@
 - const footerContent = LANG.footer;
 
-footer.footer
-    .container
+footer.footer= footerContent.text
+    a(href=footerContent.up_path).footer__up
+        img&attributes(footerContent.img_up).footer__up-img

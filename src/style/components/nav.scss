@@ -71,7 +71,7 @@
   &__burger:hover {
     .nav__burger-line::before,
     .nav__burger-line::after {
-      background: $mainHover;
+      background: $hover;
     }
   }
 
@@ -79,7 +79,6 @@
     display: none;
     padding-top: 28px;
     background-color: $mainColor;
-    //height: 100%;
     position: absolute;
     top: 49px;
     right: 0;
@@ -89,6 +88,7 @@
     text-align: center;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 
     &__link {
       display: inline-block;
@@ -108,7 +108,7 @@
       }
 
       &:hover, &:active {
-        color: $mainHover;
+        color: $hover;
       }
     }
 
