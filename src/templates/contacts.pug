@@ -1,14 +1,19 @@
 if isId === true
-    section.contacts#contact
+    section.contacts._anim-numbers#contact
         .container
             h2.contacts__title= contactsContent.title
             p.contacts__text
-                span.contacts__text1= contactsContent.text1
+                span= contactsContent.text1
                 span.contacts__text2= contactsContent.text2
             p.contacts__text.contacts__text3= contactsContent.text3
         .contacts__img-block
            img&attributes(contactsContent.img).contacts__img
         .container
+            .contacts__costs
+                .al-cost-promo= contactsContent.cost_promo
+                    span.contacts__cost-promo-line
+                p.al-cost= contactsContent.cost
+                    span.contacts__cost-symbol= contactsContent.cost_symbol
             form(class="contacts__form" action="/#" method="POST")
                 .contacts__input-name
                     input(class="input" placeholder=contactsContent.name_placeholder type="text" tabindex="1" minlength=3 required name="name")
@@ -20,20 +25,25 @@ if isId === true
         .contacts__already
             .container
                 p.contacts__already-title= contactsContent.already_title
-                p.contacts__already-text
-                    span.contacts__already-text1= contactsContent.already_text1
-                    span.contacts__already-text2= contactsContent.already_text2
+                p
+                    span(class="contacts__already-text1 _output-numbers" data-to-number=contactsContent.count_to)=contactsContent.count_to
+                    span= contactsContent.already_text
 else
-    section.contacts
+    section.contacts._anim-numbers
         .container
             h2.contacts__title= contactsContent.title
             p.contacts__text
-                span.contacts__text1= contactsContent.text1
+                span= contactsContent.text1
                 span.contacts__text2= contactsContent.text2
             p.contacts__text.contacts__text3= contactsContent.text3
         .contacts__img-block
             img&attributes(contactsContent.img).contacts__img
         .container
+            .contacts__costs
+                .al-cost-promo= contactsContent.cost_promo
+                    span.contacts__cost-promo-line
+                p.al-cost= contactsContent.cost
+                    span.contacts__cost-symbol= contactsContent.cost_symbol
             form(class="contacts__form" action="/#" method="POST")
                 .contacts__input-name
                     input(class="input" placeholder=contactsContent.name_placeholder type="text" tabindex="1" minlength=3 required name="name")
@@ -45,6 +55,6 @@ else
         .contacts__already
             .container
                 p.contacts__already-title= contactsContent.already_title
-                p.contacts__already-text
-                    span.contacts__already-text1= contactsContent.already_text1
-                    span.contacts__already-text2= contactsContent.already_text2
+                p
+                    span(class="contacts__already-text1 _output-numbers" data-to-number=contactsContent.count_to)=contactsContent.count_to
+                    span= contactsContent.already_text

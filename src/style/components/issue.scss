@@ -1,0 +1,71 @@
+/*********** ISSUE *************/
+.issue {
+  padding-top: 40px;
+
+  &__title {
+    color: $bgHover;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  &__title-highlighted {
+    color: $highlightedColor;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 30px;
+    color: $bgHover;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-highlighted {
+    font-weight: bold;
+  }
+
+  &__img-block {
+    padding-top: 54px;
+    position: relative;
+    height: 207px;
+  }
+
+  &__img {
+    position: absolute;
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__subtitle {
+    color: $highlightedColor;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 9px;
+  }
+
+  &__subtext {
+    font-size: 22px;
+    line-height: 30px;
+    color: $bgHover;
+
+    &:last-of-type {
+      margin-bottom: 169px;
+    }
+  }
+
+  &__subtext-highlighted {
+    font-weight: bold;
+  }
+}
+
+/********** ISSUE END **********/

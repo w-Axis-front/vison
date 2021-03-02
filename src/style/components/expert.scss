@@ -1,0 +1,119 @@
+/*********** EXPERT *************/
+.expert {
+  position: relative;
+  background-color: $mainColor;
+  padding-top: 147px;
+  border-radius: 20px;
+  margin-bottom: 45px;
+  padding-bottom: 62px;
+  color: $lightColor;
+
+  &__img-block {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    height: 218px;
+    z-index: $expertPhoto;
+
+  }
+
+  &__img {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 31px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &:nth-child(3) {
+      text-indent: 60px;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  &__img-q {
+    object-fit: contain;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__text-highlighted {
+    font-weight: 700;
+  }
+}
+
+.call {
+  min-height: 322px;
+  overflow: hidden;
+
+  &__content {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    position: relative;
+    min-height: 277px;
+    width: 100%;
+    max-width: 288px;
+  }
+
+  &__image-V {
+    position: absolute;
+    left: 50%;
+    height: auto;
+    object-fit: contain;
+    z-index: $V;
+    top: 22px;
+    //animation: v .6s linear infinite alternate;
+  }
+
+  &__image-I {
+  }
+
+  &__image-S {
+  }
+
+  &__image-O {
+  }
+
+  &__image-N {
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: $bgHover;
+  }
+
+  &__text-highlighted {
+    font-weight: 900;
+    font-size: 36px;
+    color: $mainColor;
+  }
+}
+
+/********** EXPERT END **********/

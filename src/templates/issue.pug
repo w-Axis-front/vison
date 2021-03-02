@@ -1,0 +1,45 @@
+- const issueContent = LANG.issue;
+
+section.issue
+    .container
+        h2.issue__title
+            span= issueContent.titlePart1
+            span.issue__title-highlighted= issueContent.titlePart2
+            span= issueContent.titlePart3
+            span.issue__title-highlighted= issueContent.titlePart4
+        p.issue__text= issueContent.text1
+        p.issue__text= issueContent.text2
+        p.issue__text= issueContent.text3
+        p.issue__text
+            span= issueContent.text4
+            span.issue__text-highlighted= issueContent.text5
+        .issue__img-block
+            img&attributes(issueContent.img1).issue__img
+        h3.issue__subtitle= issueContent.part1_title
+        p.issue__subtext
+            span.issue__subtext-highlighted= issueContent.part1_text1
+            span= issueContent.part1_text2
+            span.issue__subtext-highlighted= issueContent.part1_text3
+            span= issueContent.part1_text4
+            span.issue__subtext-highlighted= issueContent.part1_text5
+        .issue__img-block
+            img&attributes(issueContent.img2).issue__img
+        h3.issue__subtitle= issueContent.part2_title
+        p.issue__subtext
+            span.issue__subtext-highlighted= issueContent.part2_text1
+            span= issueContent.part2_text2
+            span.issue__subtext-highlighted= issueContent.part2_text3
+            span= issueContent.part2_text4
+            span.issue__subtext-highlighted= issueContent.part2_text5
+        .issue__img-block
+            img&attributes(issueContent.img3).issue__img
+        h3.issue__subtitle= issueContent.part3_title
+        p.issue__subtext
+            span= issueContent.part3_text1
+            span.issue__subtext-highlighted= issueContent.part3_text2
+            span= issueContent.part3_text3
+            span.issue__subtext-highlighted= issueContent.part3_text4
+            span= issueContent.part3_text5
+            span.issue__subtext-highlighted= issueContent.part3_text6
+            span= issueContent.part3_text7
+            span.issue__subtext-highlighted= issueContent.part3_text8

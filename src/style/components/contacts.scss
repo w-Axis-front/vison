@@ -24,9 +24,6 @@
     line-height: 30px;
   }
 
-  &__text1 {
-  }
-
   &__text2 {
     font-weight: bold;
   }
@@ -51,6 +48,52 @@
     object-fit: cover;
     width: auto;
     height: 100%;
+  }
+
+  &__costs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 23px;
+
+    .al-cost-promo {
+      font-weight: 900;
+      font-size: 35px;
+      line-height: 35px;
+      color: $textColorLight;
+      margin-right: 11px;
+      position: relative;
+    }
+
+    .al-cost {
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 62px;
+      letter-spacing: -0.02em;
+      color: $lightColor;
+      position: relative;
+    }
+  }
+
+  &__cost-promo-line {
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: $bgLighten;
+    transform: rotate(-25deg);
+    top: 50%;
+    right: 0;
+  }
+
+  &__cost-symbol {
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    color: $lightColor;
+    position: absolute;
+    top: -15px;
+    right: -15px;
   }
 
   &__form {
@@ -98,16 +141,10 @@
     margin-bottom: 6px;
   }
 
-  &__already-text {
-  }
-
   &__already-text1 {
     font-weight: bold;
     font-size: 32px;
     line-height: 30px;
-  }
-
-  &__already-text2 {
   }
 }
 
