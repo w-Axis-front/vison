@@ -2,6 +2,7 @@ import slick from "slick-carousel";
 
 export default function slider() {
     const productSlider = $('#js_productSlider');
+    const testimonialsSlider = $('#js_testimonialsSlider');
 
     $(productSlider).slick({
         arrows: false,
@@ -11,11 +12,22 @@ export default function slider() {
         swipe: true,
         centerMode: true,
         centerPadding: '0px',
-        // variableWidth: true,
         appendDots: $('.product__slider-dots')
     });
 
-    // $(slider1).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $(testimonialsSlider).slick({
+        arrows: false,
+        dots: true,
+        speed: 500,
+        touchMove: false,
+        swipe: true,
+        centerMode: true,
+        centerPadding: '0px',
+        adaptiveHeight: true,
+        appendDots: $('.testimonials__slider-dots')
+    });
+
+    // $(productSlider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     //     let direction;
     //     if (nextSlide == currentSlide) {
     //         direction = "same";

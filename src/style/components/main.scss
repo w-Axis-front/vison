@@ -60,20 +60,13 @@
 
   &__image {
     position: absolute;
-    //left: 50%;
     z-index: $visonImg;
     object-fit: contain;
     top: 0;
-    //transform: translateX(-50%);
     animation: img 2s linear infinite alternate;
   }
 
   &__content-block {
-    //padding-top: 277px;
-    //position: absolute;
-    //bottom: 0;
-    //right: 0;
-    //left: 0;
     width: 100%;
   }
 
@@ -103,7 +96,6 @@
   &__line {
     height: 42px;
     background-color: #AECDFF;
-    //position: relative;
     max-width: 100%;
     width: 100%;
     overflow: hidden;
@@ -123,75 +115,6 @@
   &__line-text {
     margin: 13px 20px 13px 10px;
     display: inline-block;
-  }
-}
-
-@keyframes img {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -10px;
-  }
-}
-
-@keyframes v {
-  0% {
-    width: 75px;
-    transform: translateX(-173px);
-  }
-  100% {
-    width: 78px;
-    transform: translateX(-169px);
-  }
-}
-
-@keyframes i {
-  0% {
-    transform: translateX(-53px);
-  }
-  100% {
-    transform: translateX(-49px);
-  }
-}
-
-@keyframes s-anim {
-  0% {
-    transform: translateX(60px);
-    top: 30px;
-  }
-  100% {
-    transform: translateX(64px);
-    top: 33px;
-  }
-}
-
-@keyframes o {
-  0% {
-    top: 150px;
-  }
-  100% {
-    top: 154px;
-  }
-}
-
-@keyframes n {
-  0% {
-    transform: translateX(-114px);
-    top: 172px;
-  }
-  100% {
-    transform: translateX(-110px);
-    top: 176px;
-  }
-}
-
-@keyframes scroll-anim {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }
 

@@ -1,11 +1,14 @@
 if isId === true
-    section.contacts._anim-numbers#contact
+    section.contacts._contact-numbers#contact
         .container
             h2.contacts__title= contactsContent.title
             p.contacts__text
                 span= contactsContent.text1
                 span.contacts__text2= contactsContent.text2
-            p.contacts__text.contacts__text3= contactsContent.text3
+            p.contacts__text.contacts__text3
+                span= contactsContent.text3
+                span.al-cost= contactsContent.text4
+                span= contactsContent.text5
         .contacts__img-block
            img&attributes(contactsContent.img).contacts__img
         .container
@@ -26,16 +29,19 @@ if isId === true
             .container
                 p.contacts__already-title= contactsContent.already_title
                 p
-                    span(class="contacts__already-text1 _output-numbers" data-to-number=contactsContent.count_to)=contactsContent.count_to
+                    span(class="contacts__already-text1 _output-numbers" data-to-number=contactsContent.count_to)= contactsContent.count_to
                     span= contactsContent.already_text
 else
-    section.contacts._anim-numbers
+    section.contacts._contact-numbers
         .container
             h2.contacts__title= contactsContent.title
             p.contacts__text
                 span= contactsContent.text1
                 span.contacts__text2= contactsContent.text2
-            p.contacts__text.contacts__text3= contactsContent.text3
+            p.contacts__text.contacts__text3
+                span= contactsContent.text3
+                span.al-cost= contactsContent.text4
+                span= contactsContent.text5
         .contacts__img-block
             img&attributes(contactsContent.img).contacts__img
         .container
@@ -56,5 +62,5 @@ else
             .container
                 p.contacts__already-title= contactsContent.already_title
                 p
-                    span(class="contacts__already-text1 _output-numbers" data-to-number=contactsContent.count_to)=contactsContent.count_to
+                    span(class="contacts__already-text1 _output-numbers" data-to-number=contactsContent.count_to)= contactsContent.count_to
                     span= contactsContent.already_text

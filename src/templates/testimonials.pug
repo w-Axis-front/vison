@@ -1,0 +1,12 @@
+- const testimonialsContent = LANG.testimonials;
+
+section.testimonials#testimonials
+    #js_testimonialsSlider
+        each val in testimonialsContent.slider
+            div(class="testimonials__slide-" + val.additional_class + " " + "testimonials__slide")
+                .testimonials__slide-img-block
+                    img&attributes(val.img).testimonials__slide-img
+                .container
+                    p.testimonials__slide-title= val.title
+                    p.testimonials__slide-text= val.text
+                .testimonials__slider-dots

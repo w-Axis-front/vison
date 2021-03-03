@@ -1,0 +1,85 @@
+/*********** COMPARING *************/
+.comparing {
+  padding-top: 80px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: $bgHover;
+    margin-bottom: 15px;
+  }
+
+  &__title-highlighted {
+    color: $mainColor;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 30px;
+    color: $bgHover;
+    margin-bottom: 47px;
+  }
+
+  &__img-block {
+    position: relative;
+    min-height: 332px;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 332px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  &__feature-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $borderColor;
+    padding-bottom: 8px;
+    align-items: center;
+    margin-bottom: 29px;
+    min-height: 40px;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 116px;
+    }
+  }
+
+  &__feature-rate-line {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: $hover;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.8s ease 0s;
+  }
+
+  &__feature-block._active {
+    .comparing__feature-rate-line {
+      width: 0;
+    }
+  }
+
+  &__feature {
+    font-size: 22px;
+    line-height: 24px;
+    color: $bgHover;
+  }
+
+  &__feature-rate {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 30px;
+    color: $mainColor;
+    vertical-align: middle;
+  }
+}
+
+/********** COMPARING END **********/

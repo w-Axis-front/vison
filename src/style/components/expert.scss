@@ -85,28 +85,49 @@
     left: 50%;
     height: auto;
     object-fit: contain;
-    z-index: $V;
     top: 22px;
-    //animation: v .6s linear infinite alternate;
+    animation: v .6s linear infinite alternate;
   }
 
   &__image-I {
+    position: absolute;
+    left: 50%;
+    top: 86px;
+    animation: i .6s linear infinite alternate;
   }
 
   &__image-S {
+    position: absolute;
+    left: 50%;
+    animation: s-anim .6s linear infinite alternate;
   }
 
   &__image-O {
+    position: absolute;
+    left: 50%;
+    transform: translateX(89px);
+    animation: o .6s linear infinite alternate;
   }
 
   &__image-N {
+    position: absolute;
+    left: 50%;
+    animation: n .6s linear infinite alternate;
   }
 
   &__text {
     font-weight: bold;
+    text-align: center;
     font-size: 32px;
     line-height: 40px;
     color: $bgHover;
+  z-index: $call;
+  width: 100%;
+  max-width: 220px;
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
   }
 
   &__text-highlighted {

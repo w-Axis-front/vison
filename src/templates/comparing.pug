@@ -1,0 +1,27 @@
+- const comparingContent = LANG.comparing;
+
+section.comparing#comparing
+    .container
+        h2.comparing__title
+            span= comparingContent.titlePart1
+            span.comparing__title-highlighted= comparingContent.titlePart2
+            span= comparingContent.titlePart3
+            span.comparing__title-highlighted= comparingContent.titlePart4
+            span= comparingContent.titlePart5
+            span.comparing__title-highlighted= comparingContent.titlePart6
+            span= comparingContent.titlePart7
+            span.comparing__title-highlighted= comparingContent.titlePart8
+        p.comparing__text= comparingContent.text
+    .comparing__img-block
+            img&attributes(comparingContent.img).comparing__img
+    .container
+        each val in comparingContent.features
+            .comparing__feature-block
+                p.comparing__feature= val.feature
+                p.comparing__feature-rate
+                    span(class=val.additional_class + " _output-numbers" data-to-number=val.count_to)= val.count_to
+                    span= val.rate
+                .comparing__feature-rate-line
+        .comparing__feature-block
+            p.comparing__feature= comparingContent.zero_feature
+            p.comparing__feature-rate= comparingContent.zero_feature_rate
