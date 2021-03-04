@@ -17,11 +17,4 @@ export default function dtime() {
     for (let idx = 0; idx < outputNodes.length; idx++) {
         outputNodes[idx].textContent = dayNum + "." + monthNum + "." + now.getFullYear();
     }
-
-    // const like_eu = true;
-    // if (like_eu === !0) {
-    // document.write(dayNum + "." + monthNum + "." + now.getFullYear())
-    // } else {
-    //     document.write(dayNum + "." + monthNum + "." + now.getFullYear())
-    // }
 }

@@ -21,22 +21,27 @@ main
     block product
         include product.pug
     - let isId = false;
+    - let isLeaveText = false;
+    - let isPromoText = false;
     block contacts
         include contacts.pug
     block issue
         include issue.pug
     block expert
         include expert.pug
+    - isLeaveText = true;
+    - isPromoText = true;
     block contacts
         include contacts.pug
     block comparing
         include comparing.pug
     block testimonials
         include testimonials.pug
-    block shipment
-        include shipment.pug
     block usage
         include usage.pug
+    block shipment
+        include shipment.pug
     - isId = true;
+    - isLeaveText = false;
     block contacts
         include contacts.pug

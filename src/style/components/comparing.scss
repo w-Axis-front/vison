@@ -1,6 +1,7 @@
 /*********** COMPARING *************/
 .comparing {
   padding-top: 80px;
+  margin-bottom: 67px;
 
   &__title {
     font-weight: bold;
@@ -44,10 +45,6 @@
     margin-bottom: 29px;
     min-height: 40px;
     position: relative;
-
-    &:last-of-type {
-      margin-bottom: 116px;
-    }
   }
 
   &__feature-rate-line {

@@ -1,5 +1,9 @@
 {
   "locale": "ru",
+  "q_img": {
+    "src": "img/svg/quote.svg",
+    "alt": "Blockquote"
+  },
   "nav": {
     "nav_logo": {
       "src": "img/svg/logo.svg",
@@ -62,6 +66,7 @@
     "text3": "одна упаковка за ",
     "text4": "€49",
     "text5": "*",
+    "text_promo1": "Внимание! \nАкция действует только до ",
     "img": {
       "scr": "img/contacts/vison.png",
       "alt": "Vison packaging",
@@ -70,6 +75,9 @@
     "cost_promo": "€98",
     "cost": "€49",
     "cost_symbol": "*",
+    "text_leave1": "Внимание! \nАкционное предложение ограничено. Осталось товаров по  акции: ",
+    "text_leave2": "3",
+    "text_leave3": " штук",
     "name_placeholder": "Введите Ваше имя",
     "phone_placeholder": "Введите Ваш телефон",
     "button": "Заказать Vison",
@@ -176,10 +184,6 @@
     },
     "title1": "Мнение эксперта:",
     "title2": "«Vison — лучшее средство для восстановления зрения в любом возрасте»",
-    "q_img": {
-      "src": "img/svg/quote.svg",
-      "alt": "Blockquote"
-    },
     "text1": "Все ",
     "text2": "нарушения зрения",
     "text3": " вызваны ",
@@ -217,7 +221,7 @@
     "text35": "рекомендую Vison",
     "text36": " всем, у кого есть ",
     "text37": "проблемы со зрением.",
-    "call_text1": "Верните ",
+    "call_text1": "Верните \n",
     "call_text2": "100%",
     "call_text3": " зрение с помощью ",
     "call_text4": "Vison",
@@ -295,17 +299,132 @@
         "additional_class": "customer3",
         "text": "У меня после аварии и удара головой еще 20 лет назад развился астигматизм и упало зрение. Видел только то, что под носом, носил очки с огромными линзами. Надо ли говорить, что женщины очкариков не очень жалуют. Слепой крот, что уж. Да к тому же, после дня работы в очках за компьютером вечером трещала голова. Мучили мигрени, приходилось постоянно сидеть на анальгине. На форуме прочитал отзыв о Vison, как он помог парню избежать операции на глазах! Заказал себе, ни на что особо не надеясь. Через неделю я заметил, что спокойно работаю за компьютером весь день. Да и головные боли исчезли. Через 10 дней я понял, что очки очень мешают, зашел в оптику проверить зрение и был поражен. С -7 зрения восстановилось до -3. Это лучше, чем лазерная коррекция. Продолжаю пить Vison. Уж очень хороший результат."
       }
+    ],
+    "survey_title": "Опрос удовлетворенности клиентов, 2020г. \n12940 человек:",
+    "appraisals": [
+      {
+        "appraisal": "Отлично",
+        "rate": "%",
+        "count_to": 89,
+        "additional_class": "testimonials__survey-appraisal-first"
+      },
+      {
+        "appraisal": "Хорошо",
+        "rate": "%",
+        "count_to": 6,
+        "additional_class": "testimonials__survey-appraisal-second"
+      },
+      {
+        "appraisal": "Удовлетворительно",
+        "rate": "%",
+        "count_to": 3,
+        "additional_class": "testimonials__survey-appraisal-third"
+      },
+      {
+        "appraisal": "Неудовлетворительно",
+        "rate": "%",
+        "count_to": 2,
+        "additional_class": "testimonials__survey-appraisal-fourth"
+      }
     ]
   },
   "usage": {
-    "titlePart1": "Как правильно принимать",
-    "titlePart2": "Vison?"
+    "titlePart1": "Как правильно принимать ",
+    "titlePart2": "Vison?",
+    "rules": [
+      {
+        "img": {
+          "src": "img/svg/usage/img1.svg",
+          "alt": "Capsule"
+        },
+        "text": "Средство необходимо принимать по 1 капсуле"
+      },
+      {
+        "img": {
+          "src": "img/svg/usage/img2.svg",
+          "alt": "Regimen"
+        },
+        "text": "Принимать 2 раза в день за 30-40 минут до еды"
+      },
+      {
+        "img": {
+          "src": "img/svg/usage/img3.svg",
+          "alt": "Course"
+        },
+        "text": "Для надежного закрепления результата принимайте курсом"
+      }
+    ],
+    "img": {
+      "scr": "img/usage.jpg",
+      "alt": "Usage result",
+      "srcset": "img/usage@2x.jpg 2x"
+    },
+    "possibilities_title": "Представьте, как изменится ваша жизнь, когда у вас снова будет 100% зрение",
+    "img_checkmark": {
+      "src": "img/svg/check-mark.svg",
+      "alt": "Check mark"
+    },
+    "possibility1_text1": "Больше ",
+    "possibility1_text2": "никаких очков",
+    "possibility1_text3": " и ",
+    "possibility1_text4": "контактных линз",
+    "possibility2_text1": "Больше ",
+    "possibility2_text2": "никаких морщин",
+    "possibility2_text3": " от постоянного ",
+    "possibility2_text4": "прищуривания глаз",
+    "possibility2_text5": " в попытках разглядеть текст",
+    "possibility3_text1": "Глаза ",
+    "possibility3_text2": "не будут воспаляться",
+    "possibility3_text3": " и ",
+    "possibility3_text4": "уставать",
+    "possibility3_text5": " после работы за компьютером",
+    "possibility4_text1": "Вы ",
+    "possibility4_text2": "перестанете",
+    "possibility4_text3": " тратить деньги на ",
+    "possibility4_text4": "бесполезные капли",
+    "possibility4_text5": " и ",
+    "possibility4_text6": "дорогостоящие операции",
+    "possibility5_text1": "Вы наконец-то ",
+    "possibility5_text2": "сможете посмотреть",
+    "possibility5_text3": " на этот мир ",
+    "possibility5_text4": "широко открытыми глазами!"
   },
   "shipment": {
-    "titlePart1": "Как",
+    "img": {
+      "scr": "img/shipment.png",
+      "alt": "Order",
+      "srcset": "img/shipment@2x.png 2x"
+    },
+    "titlePart1": "Как ",
     "titlePart2": "оформить",
-    "titlePart3": "и",
-    "titlePart4": "получить заказ:"
+    "titlePart3": " и ",
+    "titlePart4": "получить заказ:",
+    "steps": [
+      {
+        "title": "Заявка",
+        "text": "Отправьте заявку и с вами свяжется наш специалист"
+      },
+      {
+        "title": "Доставка",
+        "text": "Заказ доставляется в анонимной упаковке без упоминания средства"
+      },
+      {
+        "title": "Оплата",
+        "text": "Вы оплачиваете свой заказ на почте или курьеру"
+      },
+      {
+        "title": "Применение",
+        "text": "Применяете средство и наслаждаетесь 100% зрением"
+      }
+    ],
+    "reason_title": "Пока вы тянете время, зрение продолжает ухудшаться!",
+    "reason_text1": "Вы вынуждены постоянно щуриться и зависеть от очков. Вы продолжаете мучиться от воспаления и сухости в глазах после дня в линзах. С каждым днем возрастает риск заболеть катарактой или глаукомой.",
+    "reason_text2": "Возьмите Vison и верните себе 100% зрение!",
+    "call_text1": "Vison —",
+    "call_text2": " восстановление ",
+    "call_text3": "зрения",
+    "call_text4": " до ",
+    "call_text5": "100% без операции"
   },
   "footer": {
     "text": "Vison © 2021. Все права защищены.",

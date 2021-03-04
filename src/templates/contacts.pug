@@ -2,13 +2,18 @@ if isId === true
     section.contacts._contact-numbers#contact
         .container
             h2.contacts__title= contactsContent.title
-            p.contacts__text
-                span= contactsContent.text1
-                span.contacts__text2= contactsContent.text2
-            p.contacts__text.contacts__text3
-                span= contactsContent.text3
-                span.al-cost= contactsContent.text4
-                span= contactsContent.text5
+            if isPromoText === true
+                p.contacts__text
+                    span= contactsContent.text_promo1
+                    span.contacts__text2
+            else
+                p.contacts__text
+                    span= contactsContent.text1
+                    span.contacts__text2= contactsContent.text2
+                p.contacts__text.contacts__text3
+                    span= contactsContent.text3
+                    span.al-cost= contactsContent.text4
+                    span= contactsContent.text5
         .contacts__img-block
            img&attributes(contactsContent.img).contacts__img
         .container
@@ -35,13 +40,18 @@ else
     section.contacts._contact-numbers
         .container
             h2.contacts__title= contactsContent.title
-            p.contacts__text
-                span= contactsContent.text1
-                span.contacts__text2= contactsContent.text2
-            p.contacts__text.contacts__text3
-                span= contactsContent.text3
-                span.al-cost= contactsContent.text4
-                span= contactsContent.text5
+            if isPromoText === true
+                p.contacts__text
+                    span= contactsContent.text_promo1
+                    span.contacts__text2
+            else
+                p.contacts__text
+                    span= contactsContent.text1
+                    span.contacts__text2= contactsContent.text2
+                p.contacts__text.contacts__text3
+                    span= contactsContent.text3
+                    span.al-cost= contactsContent.text4
+                    span= contactsContent.text5
         .contacts__img-block
             img&attributes(contactsContent.img).contacts__img
         .container
@@ -50,6 +60,11 @@ else
                     span.contacts__cost-promo-line
                 p.al-cost= contactsContent.cost
                     span.contacts__cost-symbol= contactsContent.cost_symbol
+            if isLeaveText === true
+                p.contacts__text-leave
+                    span= contactsContent.text_leave1
+                    span.contacts__text-leave-highlighted= contactsContent.text_leave2
+                    span= contactsContent.text_leave3
             form(class="contacts__form" action="/#" method="POST")
                 .contacts__input-name
                     input(class="input" placeholder=contactsContent.name_placeholder type="text" tabindex="1" minlength=3 required name="name")

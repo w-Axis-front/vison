@@ -1,0 +1,79 @@
+/*********** SHIPMENT ***********/
+.shipment {
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 326px;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    height: 273px;
+    width: auto;
+    display: inline-block;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: $bgHover;
+    margin-bottom: 37px;
+  }
+
+  &__title-highlighted {
+    color: $highlightedColor;
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 30px;
+    color: $highlightedColor;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 30px;
+    color: $bgHover;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__reason {
+    background-color: $btnColorDarken;
+    border-radius: 20px;
+    padding-top: 50px;
+    color: $lightColor;
+    padding-bottom: 62px;
+  }
+
+  &__reason-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__reason-text {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  //&__call-text {
+  //  top: 70px;
+  //}
+}
+
+/********* SHIPMENT END *********/

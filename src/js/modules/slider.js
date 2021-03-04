@@ -27,7 +27,7 @@ export default function slider() {
         appendDots: $('.testimonials__slider-dots')
     });
 
-    // $(productSlider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    // $(testimonialsSlider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     //     let direction;
     //     if (nextSlide == currentSlide) {
     //         direction = "same";
@@ -36,6 +36,11 @@ export default function slider() {
     //     } else {
     //         direction = (nextSlide - currentSlide > 0) ? "left" : "right";
     //     }
+    //     setTimeout(function () {
+    //         slick.$list.css({"overflow": "hidden"});
+    //     }, 10);
     // });
+
+    // $(testimonialsSlider).on('afterChange', function (event, slick, currentSlide) {});
 }
 

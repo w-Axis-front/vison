@@ -4,7 +4,6 @@
   background-color: $mainColor;
   padding-top: 147px;
   border-radius: 20px;
-  margin-bottom: 45px;
   padding-bottom: 62px;
   color: $lightColor;
 
@@ -67,17 +66,18 @@
 }
 
 .call {
-  min-height: 322px;
+  height: 388px;
   overflow: hidden;
+  padding: 50px 0;
 
   &__content {
     left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     position: relative;
     min-height: 277px;
     width: 100%;
-    max-width: 288px;
+    max-width: 280px;
   }
 
   &__image-V {
@@ -85,14 +85,14 @@
     left: 50%;
     height: auto;
     object-fit: contain;
-    top: 22px;
+    top: -2px;
     animation: v .6s linear infinite alternate;
   }
 
   &__image-I {
     position: absolute;
     left: 50%;
-    top: 86px;
+    top: 70px;
     animation: i .6s linear infinite alternate;
   }
 
@@ -105,7 +105,7 @@
   &__image-O {
     position: absolute;
     left: 50%;
-    transform: translateX(89px);
+    transform: translateX(52px);
     animation: o .6s linear infinite alternate;
   }
 
@@ -121,20 +121,18 @@
     font-size: 32px;
     line-height: 40px;
     color: $bgHover;
-  z-index: $call;
-  width: 100%;
-  max-width: 220px;
-  position: absolute;
+    z-index: $call;
+    width: 100%;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    top: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    white-space: pre-line;
   }
 
   &__text-highlighted {
-    font-weight: 900;
-    font-size: 36px;
+    font-weight: bold;
     color: $mainColor;
   }
 }
-
 /********** EXPERT END **********/

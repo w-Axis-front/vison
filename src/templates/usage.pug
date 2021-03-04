@@ -1,3 +1,58 @@
 - const usageContent = LANG.usage;
 
 section.usage#usage
+    .container
+        h2.usage__title
+            span= usageContent.titlePart1
+            span.usage__title-highlighted= usageContent.titlePart2
+        each val in usageContent.rules
+            img&attributes(val.img).usage__rules-img
+            p.usage__rule= val.text
+    img&attributes(usageContent.img).usage__img
+    .usage__possibilities
+        .container
+            p.usage__possibilities-title= usageContent.possibilities_title
+            .usage__possibility
+                .usage__possibility-checkmark
+                    img&attributes(usageContent.img_checkmark).usage__possibility-checkmark-img
+                p.usage__possibility-text
+                    span= usageContent.possibility1_text1
+                    span.usage__possibility-text-highlighted= usageContent.possibility1_text2
+                    span= usageContent.possibility1_text3
+                    span.usage__possibility-text-highlighted= usageContent.possibility1_text4
+            .usage__possibility
+                .usage__possibility-checkmark
+                    img&attributes(usageContent.img_checkmark).usage__possibility-checkmark-img
+                p.usage__possibility-text
+                    span= usageContent.possibility2_text1
+                    span.usage__possibility-text-highlighted= usageContent.possibility2_text2
+                    span= usageContent.possibility2_text3
+                    span.usage__possibility-text-highlighted= usageContent.possibility2_text4
+                    span= usageContent.possibility2_text5
+            .usage__possibility
+                .usage__possibility-checkmark
+                    img&attributes(usageContent.img_checkmark).usage__possibility-checkmark-img
+                p.usage__possibility-text
+                    span= usageContent.possibility3_text1
+                    span.usage__possibility-text-highlighted= usageContent.possibility3_text2
+                    span= usageContent.possibility3_text3
+                    span.usage__possibility-text-highlighted= usageContent.possibility3_text4
+                    span= usageContent.possibility3_text5
+            .usage__possibility
+                .usage__possibility-checkmark
+                    img&attributes(usageContent.img_checkmark).usage__possibility-checkmark-img
+                p.usage__possibility-text
+                    span= usageContent.possibility4_text1
+                    span.usage__possibility-text-highlighted= usageContent.possibility4_text2
+                    span= usageContent.possibility4_text3
+                    span.usage__possibility-text-highlighted= usageContent.possibility4_text4
+                    span= usageContent.possibility4_text5
+                    span.usage__possibility-text-highlighted= usageContent.possibility4_text6
+            .usage__possibility
+                .usage__possibility-checkmark
+                    img&attributes(usageContent.img_checkmark).usage__possibility-checkmark-img
+                p.usage__possibility-text
+                    span= usageContent.possibility5_text1
+                    span.usage__possibility-text-highlighted= usageContent.possibility5_text2
+                    span= usageContent.possibility5_text3
+                    span.usage__possibility-text-highlighted= usageContent.possibility5_text4

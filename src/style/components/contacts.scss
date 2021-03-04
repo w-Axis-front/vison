@@ -1,27 +1,30 @@
 /*********** CONTACTS *************/
 .contacts {
+  position: relative;
   z-index: $contacts;
   background-color: $bg;
   border-radius: 20px;
-  padding-top: 44px;
   padding-bottom: 33px;
 
   &:nth-of-type(3) {
-    transform: translateY(-20px);
+    top: -20px;
   }
 
   &__title {
+    padding-top: 44px;
     color: $lightColor;
     font-weight: bold;
     font-size: 32px;
     line-height: 36px;
     margin-bottom: 13px;
+    min-height: 36px;
   }
 
   &__text {
     color: $lightColor;
     font-size: 22px;
     line-height: 30px;
+    white-space: pre-line;
   }
 
   &__text2 {
@@ -94,6 +97,19 @@
     position: absolute;
     top: -15px;
     right: -15px;
+  }
+
+  &__text-leave {
+    color: $lightColor;
+    font-size: 22px;
+    white-space: pre-line;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+
+  &__text-leave-highlighted {
+    font-size: 30px;
+    font-weight: bold;
   }
 
   &__form {

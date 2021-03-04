@@ -1,3 +1,31 @@
 - const shipmentContent = LANG.shipment;
 
 section.shipment#shipment
+    img&attributes(shipmentContent.img).shipment__img
+    .container
+        h2.shipment__title
+            span= shipmentContent.titlePart1
+            span.shipment__title-highlighted= shipmentContent.titlePart2
+            span= shipmentContent.titlePart3
+            span.shipment__title-highlighted= shipmentContent.titlePart4
+        each step in shipmentContent.steps
+            h3.shipment__subtitle= step.title
+            p.shipment__text= step.text
+    .shipment__reason
+        .container
+            h2.shipment__reason-title= shipmentContent.reason_title
+            p.shipment__reason-text= shipmentContent.reason_text1
+            p.shipment__reason-text= shipmentContent.reason_text2
+section.call
+    .call__content
+        img&attributes(mainContent.img_V).call__image-V
+        img&attributes(mainContent.img_I).call__image-I
+        img&attributes(mainContent.img_S).call__image-S
+        img&attributes(mainContent.img_O).call__image-O
+        img&attributes(mainContent.img_N).call__image-N
+        p.call__text
+            span.call__text-highlighted= shipmentContent.call_text1
+            span= shipmentContent.call_text2
+            span.call__text-highlighted= shipmentContent.call_text3
+            span= shipmentContent.call_text4
+            span.call__text-highlighted= shipmentContent.call_text5

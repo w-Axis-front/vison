@@ -25,7 +25,7 @@
     object-fit: contain;
     z-index: $V;
     top: 22px;
-    animation: v .6s linear infinite alternate;
+    animation: v-main .6s linear infinite alternate;
   }
 
   &__image-I {
@@ -33,14 +33,14 @@
     left: 50%;
     z-index: $I;
     top: 86px;
-    animation: i .6s linear infinite alternate;
+    animation: i-main .6s linear infinite alternate;
   }
 
   &__image-S {
     position: absolute;
     left: 50%;
     z-index: $S;
-    animation: s-anim .6s linear infinite alternate;
+    animation: s-anim-main .6s linear infinite alternate;
   }
 
   &__image-O {
@@ -48,14 +48,14 @@
     left: 50%;
     transform: translateX(89px);
     z-index: $O;
-    animation: o .6s linear infinite alternate;
+    animation: o-main .6s linear infinite alternate;
   }
 
   &__image-N {
     position: absolute;
     left: 50%;
     z-index: $N;
-    animation: n .6s linear infinite alternate;
+    animation: n-main .6s linear infinite alternate;
   }
 
   &__image {

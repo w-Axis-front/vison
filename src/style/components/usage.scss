@@ -1,0 +1,105 @@
+/*********** USAGE ***********/
+.usage {
+  text-align: center;
+  margin-bottom: 39px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: $bgHover;
+    margin-bottom: 54px;
+    text-align: left;
+  }
+
+  &__title-highlighted {
+    color: $mainColor;
+  }
+
+  &__rules-img {
+    object-fit: contain;
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      width: 105px;
+      height: auto;
+    }
+  }
+
+  &__rule {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 30px;
+    color: $bgHover;
+
+    &:last-of-type {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__possibilities {
+    position: relative;
+    z-index: $possibilities;
+    background-color: $mainColor;
+    border-radius: 20px;
+    padding-bottom: 68px;
+    color: $lightColor;
+    text-align: left;
+    padding-top: 57px;
+
+    &:nth-child(3) {
+      top: -20px;
+    }
+  }
+
+  &__possibilities-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  &__possibility {
+    display: flex;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__possibility-checkmark {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    margin-right: 23px;
+    border-radius: 50%;
+    background-color: $bgLighten;
+  }
+
+  &__possibility-checkmark-img {
+    position: absolute;
+    top: -9px;
+    left: 3px;
+    object-fit: contain;
+  }
+
+  &__possibility-text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  &__possibility-text-highlighted {
+    font-weight: bold;
+  }
+}
+
+/********* USAGE END *********/
