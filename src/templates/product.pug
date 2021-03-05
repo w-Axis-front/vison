@@ -2,9 +2,12 @@
 
 section.product#vison
     .container
-        h2.product__title= productContent.title
-        p.product__text= productContent.text1
-        p.product__text= productContent.text2
+        h2.product__title._anim-items
+            span._anim-show= productContent.title
+        p.product__text._anim-items
+            span._anim-show= productContent.text1
+        p.product__text._anim-items
+            span._anim-show= productContent.text2
     #js_productSlider
         each val in productContent.productSlider
             div(class="product__slide-" + val.additional_class + " " + "product__slide")

@@ -1,4 +1,5 @@
 - const shipmentContent = LANG.shipment;
+- const effectContent = LANG.effect;
 
 section.shipment#shipment
     img&attributes(shipmentContent.img).shipment__img
@@ -29,3 +30,14 @@ section.call
             span.call__text-highlighted= shipmentContent.call_text3
             span= shipmentContent.call_text4
             span.call__text-highlighted= shipmentContent.call_text5
+section.results
+    .container
+        h2.results__title
+            span.results__title-highlighted= effectContent.titlePart1
+            span= effectContent.titlePart2
+            span.results__title-highlighted= effectContent.titlePart3
+            span= effectContent.titlePart4
+            span.results__title-highlighted= effectContent.titlePart5
+        each val in effectContent.results
+            img&attributes(val.img).results__result-img
+            p.results__result= val.text

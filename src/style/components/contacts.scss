@@ -54,27 +54,29 @@
   }
 
   &__costs {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 23px;
+    text-align: right;
+    margin-bottom: 13px;
 
     .al-cost-promo {
+      display: inline-block;
       font-weight: 900;
       font-size: 35px;
       line-height: 35px;
       color: $textColorLight;
       margin-right: 11px;
       position: relative;
+      margin-bottom: 10px;
     }
 
     .al-cost {
+      display: inline-block;
       font-weight: 900;
       font-size: 70px;
       line-height: 62px;
       letter-spacing: -0.02em;
       color: $lightColor;
       position: relative;
+      margin-right: 20px;
     }
   }
 
@@ -144,6 +146,28 @@
     margin-bottom: 27px;
   }
 
+  &__delivery-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+    align-items: center;
+  }
+
+  &__delivery-img {
+    object-fit: contain;
+    display: inline-block;
+    margin-right: 17px;
+    height: 39px;
+    width: auto;
+  }
+
+  &__delivery {
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 140px;
+  }
+
   &__already {
     background-color: $bgLighten;
     color: $lightColor;
@@ -164,4 +188,16 @@
   }
 }
 
+@media (orientation: landscape) {
+  .contacts__delivery {
+    max-width: none;
+  }
+}
+
+// min 667px
+@media screen and (min-height: $iPhone6Height) {
+  .contacts__delivery {
+    max-width: none;
+  }
+}
 /*********** CONTACTS END *************/

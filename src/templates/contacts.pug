@@ -30,6 +30,9 @@ if isId === true
                     input(class="input" placeholder=contactsContent.phone_placeholder type="tel" tabindex="2" minlength=3 required name="phone")
                     img&attributes(contactsContent.input_img).contacts__input-img
                 button(class="button button-darken contacts__form-btn" type="submit")= contactsContent.button
+            .contacts__delivery-block
+                img&attributes(contactsContent.delivery_img).contacts__delivery-img
+                p.contacts__delivery= contactsContent.delivery
         .contacts__already
             .container
                 p.contacts__already-title= contactsContent.already_title
@@ -73,6 +76,9 @@ else
                     input(class="input" placeholder=contactsContent.phone_placeholder type="tel" tabindex="2" minlength=3 required name="phone")
                     img&attributes(contactsContent.input_img).contacts__input-img
                 button(class="button button-darken contacts__form-btn" type="submit")= contactsContent.button
+            .contacts__delivery-block
+                img&attributes(contactsContent.delivery_img).contacts__delivery-img
+                p.contacts__delivery= contactsContent.delivery
         .contacts__already
             .container
                 p.contacts__already-title= contactsContent.already_title

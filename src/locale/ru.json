@@ -85,6 +85,11 @@
       "src": "img/svg/lock.svg",
       "alt": "Safe and secure sending"
     },
+    "delivery": "Бесконтактная доставка",
+    "delivery_img": {
+      "src": "img/svg/delivery.svg",
+      "alt": "Contactless delivery"
+    },
     "already_title": "Уже купили сегодня:",
     "count_to": 295,
     "already_text": " человек"
@@ -425,6 +430,43 @@
     "call_text3": "зрения",
     "call_text4": " до ",
     "call_text5": "100% без операции"
+  },
+  "effect": {
+    "titlePart1": "Vison устраняет нарушения",
+    "titlePart2": " зрения, ",
+    "titlePart3": "восстанавливая",
+    "titlePart4": " сосуды и ткани ",
+    "titlePart5": "глаза",
+    "results": [
+      {
+        "img": {
+          "src": "img/svg/results/result1.svg",
+          "alt": "Vision acuity"
+        },
+        "text": "Повышает остроту зрения"
+      },
+      {
+        "img": {
+          "src": "img/svg/results/result2.svg",
+          "alt": "Blood circulation"
+        },
+        "text": "Улучшает кровообращение в сосудах глаза"
+      },
+      {
+        "img": {
+          "src": "img/svg/results/result3.svg",
+          "alt": "Resistance to cataract"
+        },
+        "text": "Препятствующих развитию катаракты"
+      },
+      {
+        "img": {
+          "src": "img/svg/results/result4.svg",
+          "alt": "Amphiblestrodes protection"
+        },
+        "text": "Защищает сетчатку глаза от внешних воздействий"
+      }
+    ]
   },
   "footer": {
     "text": "Vison © 2021. Все права защищены.",

@@ -10,12 +10,24 @@
   
   @keyframes v-main {
     0% {
-      width: 75px;
-      transform: translateX(-173px);
+      -webkit-transform: translateX(-173px) scale(1);
+      transform: translateX(-173px) scale(1);
+    }
+    25% {
+      -webkit-transform: translateX(-172px) scale(1.02);
+      transform: translateX(-172px) scale(1.02);
+    }
+    50% {
+      -webkit-transform: translateX(-171px) scale(1.04);
+      transform: translateX(-171px) scale(1.04);
+    }
+    75% {
+      -webkit-transform: translateX(-170px) scale(1.06);
+      transform: translateX(-170px) scale(1.06);
     }
     100% {
-      width: 78px;
-      transform: translateX(-169px);
+      -webkit-transform: translateX(-169px) scale(1.08);
+      transform: translateX(-169px) scale(1.08);
     }
   }
   

@@ -12,7 +12,8 @@ export default function slider() {
         swipe: true,
         centerMode: true,
         centerPadding: '0px',
-        appendDots: $('.product__slider-dots')
+        appendDots: $('.product__slider-dots'),
+        autoplay: true
     });
 
     $(testimonialsSlider).slick({
@@ -24,7 +25,8 @@ export default function slider() {
         centerMode: true,
         centerPadding: '0px',
         adaptiveHeight: true,
-        appendDots: $('.testimonials__slider-dots')
+        appendDots: $('.testimonials__slider-dots'),
+        autoplay: true
     });
 
     // $(testimonialsSlider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {

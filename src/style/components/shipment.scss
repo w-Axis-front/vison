@@ -76,4 +76,34 @@
   //}
 }
 
+.results {
+  text-align: center;
+  &__title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: $bgHover;
+    text-align: left;
+  }
+
+  &__title-highlighted {
+    color: $mainColor;
+  }
+
+  &__result-img {
+    object-fit: contain;
+    margin-bottom: 30px;
+    width: 187px;
+    height: auto;
+  }
+
+  &__result {
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 30px;
+    color: $bgHover;
+  }
+}
+
 /********* SHIPMENT END *********/

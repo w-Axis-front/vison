@@ -13,9 +13,11 @@ main
         .main__content-block
             h1.main__title= main.title
             p.main__text= main.text
-            a(href=main.button_path).main__button.button= main.button
+            .main__button-wrapper#js_btn-sticky
+                a(href=main.button_path).main__button.button= main.button
             .main__line
                 .main__line-wrapper
+                    span.main__line-text= main.line
                     span.main__line-text= main.line
                     span.main__line-text= main.line
     block product

@@ -62,7 +62,7 @@
       line-height: 4px;
       color: transparent;
       transform: none;
-      transition: transform 600ms linear 0s;
+      transition: transform 3000ms linear 0s;
 
       &:hover, &:focus, &:active, &:focus-visible {
         background-color: $dotsColorTransparent;

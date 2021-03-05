@@ -1,16 +1,16 @@
 /*********** MAIN *************/
 .main {
-    min-height: calc(100vh - 49px);
-    background-color: $mainColor;
-    overflow: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  min-height: calc(100vh - 49px);
+  background-color: $mainColor;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__images-block {
     left: 50%;
-   top: calc(50vh - 288px);
+    top: calc(50vh - 288px);
     transform: translateX(-50%);
     position: relative;
     min-height: 277px;
@@ -25,7 +25,7 @@
     object-fit: contain;
     z-index: $V;
     top: 22px;
-    animation: v-main .6s linear infinite alternate;
+    animation: v-main .6s linear -300ms infinite alternate;
   }
 
   &__image-I {
@@ -68,6 +68,7 @@
 
   &__content-block {
     width: 100%;
+    position: relative;
   }
 
   &__title {
@@ -84,13 +85,24 @@
     font-size: 22px;
     line-height: 28px;
     color: $lightColor;
-    margin-bottom: 8px;
+    margin-bottom: 84px;
     padding: 0 22px;
+  }
+
+  &__button-wrapper {
+    position: absolute;
+    bottom: 48px;
+    z-index: $mainBtn;
+    width: 100vw;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 0;
+    background-color: transparent;
   }
 
   &__button {
     max-width: 279px;
-    margin-bottom: 12px;
   }
 
   &__line {
@@ -115,6 +127,24 @@
   &__line-text {
     margin: 13px 20px 13px 10px;
     display: inline-block;
+  }
+}
+
+@media (orientation: landscape) {
+  .main__images-block {
+    top: 0;
+  }
+}
+
+// min 667px
+@media screen and (min-height: $iPhone6Height) {
+  .main {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 86px;
+    }
   }
 }
 

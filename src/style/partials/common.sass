@@ -1,79 +1,87 @@
 body
-	font-family: $main-font-family
-	position: relative
+  font-family: $main-font-family
+  position: relative
+  max-width: 926px
+  width: 100%
+  margin: 0 auto
 
 // Font icons:
 .fico
-	display: inline-block
-	font-size: 3rem
-	&::before
-		display: block
+  display: inline-block
+  font-size: 3rem
+
+  &::before
+    display: block
 
 .container
-	//max-width: $container-xl
-	// width: 100%
-	padding: 0 20px
-	// margin: 0 auto
+  //max-width: $container-xl
+  // width: 100%
+  padding: 0 20px
+// margin: 0 auto
 
 .button
-	background-color: $btnColor
-	color: $darkColor
-	font-weight: bold
-	font-size: 22px
-	line-height: 22px
-	text-align: center
-	padding-top: 17px
-	padding-bottom: 17px
-	width: 100%
-	border-radius: 30px
-	transition: .3s
-	border: 2px solid rgba(255, 255, 255, 0.25)
-	box-shadow: 0 4px 10px rgba(27, 66, 141, 0.25)
-	display: block
-	margin: 0 auto
-	letter-spacing: 0.02em
-	text-shadow: 0 1px 1px rgba(152, 153, 98, 0.2)
+  background-color: $btnColor
+  color: $darkColor
+  font-weight: bold
+  font-size: 22px
+  line-height: 22px
+  text-align: center
+  padding-top: 17px
+  padding-bottom: 17px
+  width: 100%
+  border-radius: 30px
+  transition: .3s
+  border: 2px solid rgba(255, 255, 255, 0.25)
+  box-shadow: 0 4px 10px rgba(27, 66, 141, 0.25)
+  display: block
+  margin: 0 auto
+  letter-spacing: 0.02em
+  text-shadow: 0 1px 1px rgba(152, 153, 98, 0.2)
 
-	&:hover, &:focus, &:active, &:focus-visible
-		background-color: $bg-hover
-		color: $lightColor
-	&:visited
-		background-color: $btnColor
-		color: $darkColor
+  &:hover, &:focus, &:active, &:focus-visible
+    background-color: $bg-hover
+    color: $lightColor
+
+  &:visited
+    background-color: $btnColor
+    color: $darkColor
+
 .button-darken
-	background-color: $btnColorDarken
-	color: $lightColor
-	&:hover, &:focus, &:active, &:focus-visible
-		background-color: $bg-hover-darken
-	&:visited
-		background-color: $btnColorDarken
+  background-color: $btnColorDarken
+  color: $lightColor
+
+  &:hover, &:focus, &:active, &:focus-visible
+    background-color: $bg-hover-darken
+
+  &:visited
+    background-color: $btnColorDarken
 
 .input
-	border: 1px solid rgba(27, 66, 141, 0.25)
-	vertical-align: middle
-	padding: 10px 41px 10px 16px
-	font-size: 18px
-	line-height: 30px
-	border-radius: 4px
-	width: 100%
-	background-color: $lightColor
-	color: $inputColor
+  border: 1px solid rgba(27, 66, 141, 0.25)
+  vertical-align: middle
+  padding: 10px 41px 10px 16px
+  font-size: 18px
+  line-height: 30px
+  border-radius: 4px
+  width: 100%
+  background-color: $lightColor
+  color: $inputColor
 
-	&::placeholder
-		color: $textColorTransparent
+  &::placeholder
+    color: $textColorTransparent
 
-	//&:not(:placeholder-shown), &:focus
-		//border: 1px solid $textColorTransparent
+  //&:not(:placeholder-shown), &:focus
+      //border: 1px solid $textColorTransparent
 
-	&:invalid
-		box-shadow: none
+  &:invalid
+    box-shadow: none
 
-	&:-moz-submit-invalid
-		box-shadow: none
+  &:-moz-submit-invalid
+    box-shadow: none
 
-	&:-moz-ui-invalid
-		box-shadow: none
+  &:-moz-ui-invalid
+    box-shadow: none
 
-	&:invalid:focus:placeholder-shown, &:invalid:focus:not(:placeholder-shown), &:invalid:not(:focus):not(:placeholder-shown)
-		border: 1px solid $errorColor
-		color: $errorColor
+  &:invalid:focus:placeholder-shown, &:invalid:focus:not(:placeholder-shown), &:invalid:not(:focus):not(:placeholder-shown)
+    border: 1px solid $errorColor
+    color: $errorColor

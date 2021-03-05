@@ -30,6 +30,11 @@
     font-size: 32px;
     line-height: 30px;
     margin-bottom: 20px;
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+    }
   }
 
   &__text {
@@ -37,6 +42,11 @@
     line-height: 30px;
     color: $bgHover;
     margin-bottom: 20px;
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+    }
 
     &:last-of-type {
       margin-bottom: 46px;
@@ -74,7 +84,7 @@
       line-height: 4px;
       color: transparent;
       transform: none;
-      transition: transform 600ms linear 0s;
+      transition: transform 3000ms linear 0s;
 
       &:hover, &:focus, &:active, &:focus-visible {
         background-color: $lightColor;
@@ -151,4 +161,16 @@
     }
   }
 }
+
+._anim-show {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.anim-show._active, ._active ._anim-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
 /*********** PRODUCT END *************/
