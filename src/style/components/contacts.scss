@@ -147,21 +147,20 @@
   }
 
   &__delivery-block {
-    display: flex;
-    justify-content: center;
     margin-bottom: 27px;
-    align-items: center;
+    text-align: center;
+    vertical-align: middle;
   }
 
   &__delivery-img {
     object-fit: contain;
-    display: inline-block;
     margin-right: 17px;
     height: 39px;
     width: auto;
   }
 
   &__delivery {
+    display: inline-block;
     font-size: 18px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.7);
@@ -198,6 +197,14 @@
 @media screen and (min-height: $iPhone6Height) {
   .contacts__delivery {
     max-width: none;
+  }
+}
+
+// min 360px
+@media screen and (min-width: $xxs) {
+  .contacts__delivery {
+    max-width: none;
+    line-height: 39px;
   }
 }
 /*********** CONTACTS END *************/

@@ -32,7 +32,7 @@ if isId === true
                 button(class="button button-darken contacts__form-btn" type="submit")= contactsContent.button
             .contacts__delivery-block
                 img&attributes(contactsContent.delivery_img).contacts__delivery-img
-                p.contacts__delivery= contactsContent.delivery
+                span.contacts__delivery= contactsContent.delivery
         .contacts__already
             .container
                 p.contacts__already-title= contactsContent.already_title
@@ -78,7 +78,7 @@ else
                 button(class="button button-darken contacts__form-btn" type="submit")= contactsContent.button
             .contacts__delivery-block
                 img&attributes(contactsContent.delivery_img).contacts__delivery-img
-                p.contacts__delivery= contactsContent.delivery
+                span.contacts__delivery= contactsContent.delivery
         .contacts__already
             .container
                 p.contacts__already-title= contactsContent.already_title

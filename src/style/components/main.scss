@@ -33,29 +33,31 @@
     left: 50%;
     z-index: $I;
     top: 86px;
-    animation: i-main .6s linear infinite alternate;
+    animation: i-main .6s linear -200ms infinite alternate;
   }
 
   &__image-S {
     position: absolute;
     left: 50%;
     z-index: $S;
-    animation: s-anim-main .6s linear infinite alternate;
+    top: 29px;
+    animation: s-anim-main .6s linear -100ms infinite alternate;
   }
 
   &__image-O {
     position: absolute;
     left: 50%;
-    transform: translateX(89px);
+    top: 150px;
     z-index: $O;
-    animation: o-main .6s linear infinite alternate;
+    animation: o-main .6s linear -400ms infinite alternate;
   }
 
   &__image-N {
     position: absolute;
     left: 50%;
     z-index: $N;
-    animation: n-main .6s linear infinite alternate;
+    top: 172px;
+    animation: n-main .6s linear -500ms infinite alternate;
   }
 
   &__image {
@@ -63,7 +65,7 @@
     z-index: $visonImg;
     object-fit: contain;
     top: 0;
-    animation: img 2s linear infinite alternate;
+    animation: img-anim 2s linear -50ms infinite alternate;
   }
 
   &__content-block {

@@ -86,33 +86,36 @@
     height: auto;
     object-fit: contain;
     top: -2px;
-    animation: v .6s linear infinite alternate;
+    width: 75px;
+    animation: v .6s linear -300ms infinite alternate;
   }
 
   &__image-I {
     position: absolute;
     left: 50%;
     top: 70px;
-    animation: i .6s linear infinite alternate;
+    animation: i .6s linear -200ms infinite alternate;
   }
 
   &__image-S {
     position: absolute;
     left: 50%;
-    animation: s-anim .6s linear infinite alternate;
+    top: 30px;
+    animation: s-anim .6s linear -100ms infinite alternate;
   }
 
   &__image-O {
     position: absolute;
     left: 50%;
-    transform: translateX(52px);
-    animation: o .6s linear infinite alternate;
+    top: 138px;
+    animation: o .6s linear -400ms infinite alternate;
   }
 
   &__image-N {
     position: absolute;
     left: 50%;
-    animation: n .6s linear infinite alternate;
+    top: 212px;
+    animation: n .6s linear -500ms infinite alternate;
   }
 
   &__text {
