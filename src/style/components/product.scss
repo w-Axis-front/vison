@@ -21,9 +21,6 @@
   .slick-slide {
   }
 
-  .slick-dots {
-  }
-
   &__title {
     color: $mainColor;
     font-weight: 900;
@@ -57,60 +54,39 @@
     position: relative;
   }
 
-  //&__slider-dots {
-   {
+  ul.slick-dots {
+    display: inline-flex;
+    height: 100%;
     position: absolute;
     top: 9px;
     left: 50%;
     transform: translateX(-50%);
     z-index: $productSlideDots;
+  }
 
-    ul.slick-dots {
-      display: inline-flex;
-      height: 100%;
-    }
+  ul.slick-dots li {
+    width: 64px;
+    margin-right: 8px;
+    overflow-x: hidden;
 
-    ul.slick-dots li {
-      width: 64px;
-      margin-right: 8px;
-      overflow-x: hidden;
-    }
-
-    ul.slick-dots li button {
-      font-size: 0;
-      background-color: $lightColor;
-      border-radius: 2px;
-      width: 100%;
-      height: 4px;
-      line-height: 4px;
-      color: transparent;
-      transform: none;
-      transition: transform 3000ms linear 0s;
-
-      &:hover, &:focus, &:active, &:focus-visible {
-        background-color: $lightColor;
-      }
-    }
-
-    ul.slick-dots li:last-of-type {
+    &:last-of-type {
       margin-right: 0;
     }
   }
 
-  &__slide-customer1 .product__slider-dots ul.slick-dots li:nth-of-type(1) button {
-    transform: translateX(-100%);
-  }
+  ul.slick-dots li button {
+    font-size: 0;
+    background-color: $lightColor;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    line-height: 4px;
+    color: transparent;
+    //transition: all 0s ease 0s;
 
-  &__slide-customer2 .product__slider-dots ul.slick-dots li:nth-of-type(2) button {
-    transform: translateX(-100%);
-  }
-
-  &__slide-customer3 .product__slider-dots ul.slick-dots li:nth-of-type(3) button {
-    transform: translateX(-100%);
-  }
-
-  &__slide-customer4 .product__slider-dots ul.slick-dots li:nth-of-type(4) button {
-    transform: translateX(-100%);
+    &:hover, &:focus, &:active, &:focus-visible {
+      background-color: $lightColor;
+    }
   }
 
   &__slide-img {
@@ -122,7 +98,7 @@
 
   &__slide-text {
     position: absolute;
-    padding: 24px 0;
+    padding: 24px 10px;
     top: 43px;
     left: 50%;
     transform: translateX(-50%);
@@ -140,26 +116,13 @@
   .slick-slide.slick-current {
     // For fixing infinite slider jumping issue from last to firs:
     //opacity: 1;
+  }
 
-    .product__slide-customer1 .product__slider-dots ul.slick-dots li:nth-of-type(1) button {
-      background-color: $hover;
-      transform: none;
-    }
-
-    .product__slide-customer2 .product__slider-dots ul.slick-dots li:nth-of-type(2) button {
-      background-color: $hover;
-      transform: none;
-    }
-
-    .product__slide-customer3 .product__slider-dots ul.slick-dots li:nth-of-type(3) button {
-      background-color: $hover;
-      transform: none;
-    }
-
-    .product__slide-customer4 .product__slider-dots ul.slick-dots li:nth-of-type(4) button {
-      background-color: $hover;
-      transform: none;
-    }
+  ul.slick-dots li.slick-active button {
+    //transition: all 0s ease 0s;
+    //transform: translateX(-100%);
+    //transition: transform 3000ms linear 0s;
+    background-color: $hover;
   }
 }
 

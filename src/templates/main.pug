@@ -15,11 +15,11 @@ main
             p.main__text= main.text
             .main__button-wrapper#js_btn-sticky
                 a(href=main.button_path).main__button.button= main.button
-            .main__line
-                .main__line-wrapper
-                    span.main__line-text= main.line
-                    span.main__line-text= main.line
-                    span.main__line-text= main.line
+            .main__line-wrapper
+                span.main__line-text= main.line
+                span.main__line-text= main.line
+                span.main__line-text= main.line
+                span.main__line-text= main.line
     block product
         include product.pug
     - let isId = false;

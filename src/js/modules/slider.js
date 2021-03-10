@@ -4,6 +4,20 @@ export default function slider() {
     const productSlider = $('#js_productSlider');
     const testimonialsSlider = $('#js_testimonialsSlider');
 
+    $(productSlider).on("init", function (event, slick) {
+        // const dotsBtns = $('#js_productSlider ul.slick-dots li button');
+        // console.log("firstDot", firstDot);
+        slick.$dots.find('button').each(function (index) {
+            if (index === 0) {
+                // console.log("$( this ).find('button')", $( this ).find("button"));
+                $(this).css({
+                    "transform": "translateX(100%)",
+                    "transition": "transform 3000ms linear 0s"
+                });
+            }
+        });
+    });
+
     $(productSlider).slick({
         arrows: false,
         dots: true,
@@ -12,7 +26,6 @@ export default function slider() {
         swipe: true,
         centerMode: true,
         centerPadding: '0px',
-        // appendDots: $('.product__slider-dots'),
         autoplay: true
     });
 
@@ -25,24 +38,55 @@ export default function slider() {
         centerMode: true,
         centerPadding: '0px',
         adaptiveHeight: true,
-        // appendDots: $('.testimonials__slider-dots'),
-        autoplay: true
+        appendDots: $('.testimonials__slider-dots'),
+        autoplay: true,
+        pauseOnHover: true
     });
 
-    // $(testimonialsSlider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    //     let direction;
-    //     if (nextSlide == currentSlide) {
-    //         direction = "same";
-    //     } else if (Math.abs(nextSlide - currentSlide) == 1) {
-    //         direction = (nextSlide - currentSlide > 0) ? "right" : "left";
-    //     } else {
-    //         direction = (nextSlide - currentSlide > 0) ? "left" : "right";
-    //     }
-    //     setTimeout(function () {
-    //         slick.$list.css({"overflow": "hidden"});
-    //     }, 10);
-    // });
+    $(productSlider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        // const dotsBtns = $('#js_productSlider ul.slick-dots li button');
 
-    // $(testimonialsSlider).on('afterChange', function (event, slick, currentSlide) {});
+        slick.$dots.children().each(function (index) {
+            if (index === nextSlide) {
+                //     const nextBtn = $(this).find("button");
+                // const promise1 = new Promise((resolve, reject) => {
+                $(this).find("button").css({
+                    "transform": "translateX(100%)",
+                    "transition": "transform 3000ms linear 0s"
+                });
+                // setTimeout(function(){
+                //     resolve("Success!");
+                // }, 10);
+                // });
+                // promise1.then((value) => {
+                //     nextBtn.css({"transform": "none", });
+                // });
+
+                // setTimeout(function () {
+                // nextBtn.css({"transform": "none"});
+                // }, 10);
+            } else {
+                $(this).find("button").css({"transition": "all 0s ease 0s", "transform": "none"});
+            }
+        });
+    });
+
+    $(productSlider).on('afterChange', function (event, slick, currentSlide) {
+        // const dotsBtns = $('#js_productSlider ul.slick-dots li button');
+        // dotsBtns.each(function (index) {
+        slick.$dots.children().each(function (index) {
+
+            if (index === currentSlide) {
+                // $(this).find("button").css({"transform": "none"});
+                // setTimeout(function () {
+                // console.log("afterChange currentSlide dot transform", $(this).css("transform"));
+                //     nextBtn.css({"transform": "none", "transition": "all 0s ease 0s"});
+                // }, 10);
+            } else {
+                // $(this).find("button").css({"transition": "all 0s ease 0s", "transform": "translateX(-100%)"});
+                // $(this).find("button").css({"transition": "all 0s ease 0s", "transform": "none"});
+            }
+        });
+    });
 }
 
